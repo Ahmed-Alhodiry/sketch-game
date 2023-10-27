@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SKETCH GAME</title>
+</head>
+<body>
+    <div class="flex">
+        <div class="container">
+            <div class="board"></div>
+        </div>
+        <div class="btn">
+            <button>black</button>
+            <button onclick="changeColor('white')">white</button>
+            <button>random</button>
+            <button>reset</button>
+        </div> 
+        <input type="range" min="2" max="100" value="16" id="slider" onchange="changeSize()">
+        <p class="value">16</p>
+
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
